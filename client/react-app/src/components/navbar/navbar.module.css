@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: #00000010;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+    padding: 0 1rem;
+}
+
+.left, .right {
+    width: 3rem;
+}
+
+.left img {
+    width: 2.7rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}

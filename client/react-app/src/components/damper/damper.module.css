@@ -1,0 +1,43 @@
+.damper {
+    width: 10rem;
+    height: 10rem;
+    box-sizing: border-box;
+}
+
+.damperLeft {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1.2rem;
+    height: 10rem;
+    background-color: black;
+}
+
+.damperRight {
+    position: relative;
+    left: 9rem;
+    top: -10rem;
+    width: 1.2rem;
+    height: 10rem;
+    background-color: black;
+}
+
+.damperRound {
+    position: relative;
+    left: 3.3rem;
+    top: -16.8rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.damperMovable {
+    rotate: -45deg;
+    position: relative;
+    left: 4.5rem;
+    top: -23.5rem;
+    width: 1.2rem;
+    height: 10rem;
+    background-color: black;
+}

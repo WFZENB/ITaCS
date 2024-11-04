@@ -1,0 +1,19 @@
+.visualizationFrame {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    height: 95%;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    width: 32rem;
+}

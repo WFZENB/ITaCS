@@ -1,0 +1,11 @@
+.settingsFrame {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.param {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

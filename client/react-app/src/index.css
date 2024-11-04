@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 1040px;;
+}
+
+#root {
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+html {
+  font-size: 10px;
+}
+
+ol, ul {
+  margin: .5rem 0;
+  padding-left: 2.5rem;
+}
+
+div, label, input {
+  font-size: 1.7rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.card {
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: .1rem .1rem .3rem #00000088;
+  text-align: justify;
+  background-color: #ffffff;
+}
+
+.card .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+}

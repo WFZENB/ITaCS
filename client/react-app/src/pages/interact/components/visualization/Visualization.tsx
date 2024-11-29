@@ -1,14 +1,17 @@
-import React, {useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 
 import cl from './visualization.module.css';
 import cn from "classnames";
 import Damper from "../../../../components/damper/Damper";
 import Fan from "../../../../components/fan/Fan";
+import {SocketContext} from "../../../../App";
 
 const Visualization = () => {
 
+  const {socket} = useContext(SocketContext);
+
   const [pctOpen, setPctOpen] = useState<number>(100);
-  const [speed, setSpeed] = useState<number>(30)
+  const [speed, setSpeed] = useState<number>(30);
 
   return (
     <div className={cn('card', cl.visualizationFrame)}>

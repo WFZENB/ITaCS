@@ -3,11 +3,11 @@ body {
   font-family: monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: 1040px;;
+  min-width: 960px;
 }
 
 #root {
-  height: 100vh;
+  --height: 100vh;
 }
 
 code {
@@ -41,4 +41,8 @@ div, label, input {
 .card .title {
   font-weight: 600;
   font-size: 1.8rem;
+}
+
+button {
+  height: 26px;
 }

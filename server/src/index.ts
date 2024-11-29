@@ -12,6 +12,7 @@ router.ws('/', (ws) => {
   console.log('WS connected');
   ws.on('message', (message) => {
     // Каждый клиент это WS
+    console.log(message)
     WSS.clients.forEach(client => client.send(message));
   })
 })

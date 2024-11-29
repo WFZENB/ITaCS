@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className={cl.navbar}>
       <div className={cl.left}>
-        {location.pathname !== '/' &&
+        {!['/', '/simulation'].includes(location.pathname) &&
           <NavLink to={'/'} className={cl.homeIcon}>
               <img src={homeIcon} alt={''}/>
           </NavLink>
@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className={cl.title}>
         {location.pathname === '/'
           ? 'Система управления вентиляцией складского помещения'
-          : 'Мониторинг-управление'
+          : location.pathname === '/interact' ? 'Мониторинг-управление' : 'Симуляция'
         }
       </div>
       <div className={cl.right}/>

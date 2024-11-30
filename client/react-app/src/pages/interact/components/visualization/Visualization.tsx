@@ -4,14 +4,22 @@ import cl from './visualization.module.css';
 import cn from "classnames";
 import Damper from "../../../../components/damper/Damper";
 import Fan from "../../../../components/fan/Fan";
-import {SocketContext} from "../../../../App";
+import {VisualizationContext} from "../../../../App";
 
 const Visualization = () => {
 
-  const {socket} = useContext(SocketContext);
+  const {
+    monitoringFanSpeed,
+    monitoringDamperOpen,
+  } = useContext(VisualizationContext);
 
-  const [pctOpen, setPctOpen] = useState<number>(100);
-  const [speed, setSpeed] = useState<number>(30);
+  const [pctOpen, setPctOpen] = useState<number>(0);
+  const [speed, setSpeed] = useState<number>(0);
+
+  useEffect(() => {
+    setSpeed(monitoringFanSpeed);
+    setPctOpen(monitoringDamperOpen);
+  }, [monitoringFanSpeed, monitoringDamperOpen]);
 
   return (
     <div className={cn('card', cl.visualizationFrame)}>

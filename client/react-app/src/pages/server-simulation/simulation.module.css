@@ -1,6 +1,9 @@
 .simulationPage {
     margin: 2rem;
     height: calc(100vh - 12rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .container {

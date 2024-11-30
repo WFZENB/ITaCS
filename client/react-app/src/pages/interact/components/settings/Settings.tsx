@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useState} from 'react';
 
 import cl from './settings.module.css';
 import cn from 'classnames';
@@ -44,8 +44,11 @@ const Settings = () => {
       <button
         onClick={() => {
           socket?.send(JSON.stringify({
-            newTemperature: temperature,
-            newHumidity: humidity
+            alias: 'updSettings',
+            data: {
+              temperature: temperature,
+              humidity: humidity
+            }
           }));
         }}
       >

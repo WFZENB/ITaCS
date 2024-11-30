@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className={cl.navbar}>
       <div className={cl.left}>
-        {!['/', '/simulation'].includes(location.pathname) &&
+        {!['/', '/server-simulation'].includes(location.pathname) &&
           <NavLink to={'/'} className={cl.homeIcon}>
               <img src={homeIcon} alt={''}/>
           </NavLink>
